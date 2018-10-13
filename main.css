@@ -1,0 +1,73 @@
+body {
+	font-family: Verdana, Geneva, sans-serif;
+	margin-left: auto;
+	margin-right: auto;
+	width: 81.9%;
+	padding-left: 4.55%;
+	padding-right: 4.55%;
+	clear: none;
+	float: none;
+	min-height: 100%;
+}
+h1 {
+  font-weight: normal;
+  color: #581845;
+  
+}
+
+h2 {
+  font-weight: normal;
+  color: #581845;
+}
+
+h3 {
+  font-weight: normal;
+  color: #818181;
+}
+
+/*===================================================================*/
+/* The sidebar menu */
+.sidenav {
+  height: 100%;
+  width: 360px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 100px;
+  padding-left: 20px;
+}
+ /* Centred my picture in left sidebar */
+.my_picture img {
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  /*padding: 50px 50px 75px 100px;*/
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+}
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+/*===================================================================*/
+/* Style page content */
+.main {
+  margin-left: 360px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
