@@ -1,5 +1,20 @@
+@font-face {
+  font-family: 'Gotham-Book';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gotham-Book'), url('GothamBook.woff') format('woff');
+  }
+  
+  
+  @font-face {
+  font-family: 'Gotham-Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gotham-Bold'), url('gotham-bold-1361523260.woff') format('woff');
+  }
+
 body {
-	font-family: Arial, Geneva, sans-serif;
+	font-family: 'Gotham-Book';
 	margin-left: auto;
 	margin-right: auto;
 	width: 81.9%;
@@ -11,22 +26,26 @@ body {
   line-height: 1.5;
 }
 h1 {
+  font-family: 'Gotham-Book';
   font-weight: normal;
   color: #581845;
   
 }
 
 h2 {
+  font-family: 'Gotham-Book';
   font-weight: normal;
   color: #581845;
 }
 
 h3 {
+  font-family: 'Gotham-Book';
   font-weight: normal;
   color: #818181;
 }
 
 p{
+  font-family: 'Gotham-Book';
   font-size: 18px;
 }
 
@@ -34,7 +53,7 @@ p{
 /* The sidebar menu */
 .sidenav {
   height: 100%;
-  width: 360px;
+  width: 300px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -66,9 +85,14 @@ p{
 /*===================================================================*/
 /* Style page content */
 .main {
-  margin-left: 360px; /* Same as the width of the sidenav */
+  margin-left: 300px; /* Same as the width of the sidenav */
   font-size: 28px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
+  padding: 0px 5px;
+}
+
+.main a{
+  text-decoration : none;
+  color: #818181;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
