@@ -2,7 +2,7 @@
   font-family: 'Gotham-Book';
   font-style: normal;
   font-weight: normal;
-  src: local('Gotham-Book'), url('GothamBook.woff') format('woff');
+  src: local('Gotham-Book'), url('src/GothamBook.woff') format('woff');
   }
   
   
@@ -10,7 +10,7 @@
   font-family: 'Gotham-Bold';
   font-style: normal;
   font-weight: normal;
-  src: local('Gotham-Bold'), url('gotham-bold-1361523260.woff') format('woff');
+  src: local('Gotham-Bold'), url('src/gotham-bold-1361523260.woff') format('woff');
   }
 
 body {
@@ -41,6 +41,13 @@ h2 {
 h3 {
   font-family: 'Gotham-Book';
   font-weight: normal;
+  color: #818181;
+}
+
+h4 {
+  font-family: 'Gotham-Bold';
+  font-size: 18px;
+  margin-bottom: 0px;
   color: #818181;
 }
 
@@ -99,4 +106,28 @@ p{
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+
+/*===================================================================*/
+/* Create two column environment */
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  margin-left: 300px; /* Same as the width of the sidenav */
+}
+
+.left {
+width: 40%;
+}
+
+.right {
+width: 60%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
