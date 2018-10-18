@@ -75,10 +75,11 @@ p{font-family: 'Gotham-Book';
 .sidebar a:hover {
   color: #f1f1f1;
 }
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+/* On smaller screens, where width is less than 768px, 
+remove sidebar */
 @media screen and (max-width: 768px) {
-  .sidenav {display:none;}
-  .sidenav a {font-size: 18px;}
+  .sidebar {display:none;}
+  /*.sidebar a {font-size: 18px;}*/
 }
 /* What means screen? */
 /* 768px is considered the breakpoint for mobile width vs. desktop */
