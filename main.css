@@ -58,9 +58,9 @@ p{
 
 /*===================================================================*/
 /* The sidebar menu */
-.sidenav {
+.sidebar {
   height: 100%;
-  width: 300px;
+  width: 22%;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -79,22 +79,23 @@ p{
 }
 
 /* The navigation menu links */
-.sidenav a {
+.sidebar a {
   /*padding: 50px 50px 75px 100px;*/
   text-decoration: none;
   font-size: 25px;
   color: #818181;
 }
 /* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
+.sidebar a:hover {
   color: #f1f1f1;
 }
 /*===================================================================*/
 /* Style page content */
 .main {
-  margin-left: 300px; /* Same as the width of the sidenav */
+  margin-left: 22%; /* Same as the width of the sidenav */
   font-size: 28px; /* Increased text to enable scrolling */
   padding: 0px 5px;
+  left auto;
 }
 
 .main a{
@@ -109,25 +110,39 @@ p{
 }
 
 /*===================================================================*/
-/* Create two column environment */
-/* Create two unequal columns that floats next to each other */
-.column {
-  float: left;
-  padding: 10px;
-  margin-left: 300px; /* Same as the width of the sidenav */
+/* Create three equal columns that floats next to each other */
+.container {
+  display: flex;
+  margin-left: 22%;
+}
+.column-left
+{ 
+  float: left; 
+  width: 30%; 
+}
+.column-right
+{ 
+  float: left; 
+  width: 48%;
 }
 
-.left {
-width: 40%;
+ .picture img {
+  padding-top:80px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.right {
-width: 60%;
+.picture_ img {
+  padding-top:80px;
+  padding-left:-80px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+@media screen and (max-width: 1600px) {
+    .column-left{ float: none; width: 100%; }
+    .column-right{ float: none; width: 100%; }
 }
+
