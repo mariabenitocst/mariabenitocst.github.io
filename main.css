@@ -1,17 +1,8 @@
-@font-face {
-  font-family: 'Gotham-Book';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Gotham-Book'), url('src/GothamBook.woff') format('woff');
-  }
+@font-face {font-family: 'Gotham-Book'; font-style: normal; font-weight: normal;
+  src: local('Gotham-Book'), url('src/GothamBook.woff') format('woff');}
   
-  
-  @font-face {
-  font-family: 'Gotham-Bold';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Gotham-Bold'), url('src/gotham-bold-1361523260.woff') format('woff');
-  }
+@font-face {font-family: 'Gotham-Bold'; font-style: normal; font-weight: normal;
+  src: local('Gotham-Bold'), url('src/gotham-bold-1361523260.woff') format('woff');}
 
 body {
 	font-family: 'Gotham-Book';
@@ -25,38 +16,33 @@ body {
   min-height: 100%;
   line-height: 1.5;
 }
-h1 {
-  font-family: 'Gotham-Book';
+
+h1 {font-family: 'Gotham-Book';
   font-weight: normal;
-  color: #C70039;
-  
+  color: #C70039; 
 }
 
-h2 {
-  font-family: 'Gotham-Book';
+h2 {font-family: 'Gotham-Book';
   font-weight: normal;
   color: #581845;
 }
 
-h3 {
-  font-family: 'Gotham-Book';
+h3 {font-family: 'Gotham-Book';
   font-weight: normal;
   color: #818181;
 }
 
-h4 {
-  font-family: 'Gotham-Bold';
+h4 {font-family: 'Gotham-Bold';
   font-size: 18px;
   margin-bottom: 0px;
   color: #818181;
 }
 
-p{
-  font-family: 'Gotham-Book';
+p{font-family: 'Gotham-Book';
   font-size: 18px;
 }
 
-/*===================================================================*/
+/*==================================================================================================*/
 /* The sidebar menu */
 .sidebar {
   height: 100%;
@@ -89,7 +75,15 @@ p{
 .sidebar a:hover {
   color: #f1f1f1;
 }
-/*===================================================================*/
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-width: 768px) {
+  .sidenav {display:none;}
+  .sidenav a {font-size: 18px;}
+}
+/* What means screen? */
+/* 768px is considered the breakpoint for mobile width vs. desktop */
+
+/*==================================================================================================*/
 /* Style page content */
 .main {
   margin-left: 22%; /* Same as the width of the sidenav */
@@ -102,14 +96,7 @@ p{
   text-decoration : none;
   color: #818181;
 }
-
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
-/*===================================================================*/
+/*==================================================================================================*/
 /* Create three equal columns that floats next to each other */
 .container {
   display: flex;
@@ -135,7 +122,7 @@ p{
 
 .picture_ img {
   padding-top:80px;
-  padding-left:-80px;
+  padding-left:-200px;
   display: block;
   margin-left: auto;
   margin-right: auto;
